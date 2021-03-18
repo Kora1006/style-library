@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu List</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <ul>
+        <div id="marker"></div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Adress</a></li>
+        <li><a href="#">Phone</a></li>
+    </ul>
+    <script>
+        const marker = document.querySelector('#marker');
+        const item = document.querySelectorAll('ul li a');
+        function menuAnima(e) {
+            marker.style.top = e.offsetTop+'px';
+            marker.style.width = e.offsetWidth + 'px';
+        }
+        item.forEach(m => {
+            m.addEventListener('mousemove',(e) => {
+                menuAnima(e.target);
+            })
+        });
+    </script>
+</body>
+
+</html>
