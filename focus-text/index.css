@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    width: 100%;
+}
+
+.shining {
+    font-size: 2em;
+    font-family:  Lato, sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: transparent;
+    animation: animat 3s linear infinite;
+}
+@keyframes animat {
+    0% {
+        background-position: -300%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
