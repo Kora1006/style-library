@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+* {
+    padding: none;
+    margin: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    text-align: center;
+}
+
+.rainbow {
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    font-family: Lato, serif;
+    text-transform: uppercase;
+}
+
+.rainbow span {
+    animation: rainbow 20s alternate infinite forwards;
+}
+@keyframes rainbow {
+    0% {
+      color: #8fb9ef;
+    }
+    5% {
+      color: #ce8fef;
+    }
+    10% {
+      color: #efd98f;
+    }
+    15% {
+      color: #8fefb9;
+    }
+    20% {
+      color: #d1ef8f;
+    }
+    25% {
+      color: #8f93ef;
+    }
+    30% {
+      color: #8fe4ef;
+    }
+    35% {
+      color: #8fd2ef;
+    }
+    40% {
+      color: #8fefa7;
+    }
+    45% {
+      color: #8feaef;
+    }
+    50% {
+      color: #8fefe4;
+    }
+    55% {
+      color: #eaef8f;
+    }
+    60% {
+      color: #efe48f;
+    }
+    65% {
+      color: #efae8f;
+    }
+    70% {
+      color: #ea8fef;
+    }
+    75% {
+      color: #afef8f;
+    }
+    80% {
+      color: #93ef8f;
+    }
+    85% {
+      color: #8fefcf;
+    }
+    90% {
+      color: #8fefde;
+    }
+    95% {
+      color: #daef8f;
+    }
+    100% {
+      color: #8fdcef;
+    }
+  }
